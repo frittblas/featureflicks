@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { useStates } from '../utilities/states';
 
 export default function () {
@@ -21,5 +21,6 @@ export default function () {
     <h4>Categories: {categories.join(', ')}</h4>
     <img src={'https://cinema-rest.nodehill.se' + posterImage} />
     <hr />
+    <Link to="/movies">&larr; Go back</Link>
   </div>
 }

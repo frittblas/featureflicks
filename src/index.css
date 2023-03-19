@@ -27,12 +27,22 @@ body {
   object-fit: cover;
 }
 
+.movie-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 40px;
+}
+
 .text-msg {
   background-color: #24a320;
   border: 1px solid #ffffff;
   border-radius: 4px;
   padding: 20px;
   margin-top: 20px;
+  margin-bottom: 20px;
   text-align: center;
   font-size: 18px;
   width: 400px;
@@ -82,10 +92,9 @@ body {
   text-align: center;
 }
 
-/* Sticky footer 
-body {
+/* Sticky footer */
+main {
   display: flex;
-  min-height: 100vh;
+  min-height: 88vh;
   flex-direction: column;
 }
-*/
