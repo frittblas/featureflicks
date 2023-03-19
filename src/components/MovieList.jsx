@@ -1,11 +1,11 @@
-import { useStates } from './utilities/states';
+import { useStates } from '../utilities/states';
 import { Link } from 'react-router-dom';
 import { Card, Row, Col } from 'react-bootstrap';
 
 export default function MovieList() {
   const s = useStates('main');
   return (<div className="aMovie" >
-    <Row xs={1} sm={3} md={5} className="g-4">
+    <Row xs={1} sm={3} md={5}>
       {s.movies.map(({ slug, title, description: d }) => (
         <Col key={slug}>
           <Link to={'/movie-detail/' + slug}>

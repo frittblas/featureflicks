@@ -1,9 +1,8 @@
 import { useEffect } from 'react';
-import { useStates } from './utilities/states';
+import { useStates } from '../utilities/states';
+import { kebabify } from '../utilities/kebabify';
 import MovieList from './MovieList';
-import MovieDetail from './MovieDetail';
-import { Routes, Route } from 'react-router-dom';
-import { kebabify } from './utilities/kebabify';
+
 
 export default function ShowMovies() {
 
@@ -23,17 +22,9 @@ export default function ShowMovies() {
       s.movies = movies;
     })();
   }, []);
-  /*
-    return s.movies.length === 0 ? null : <>
-      <MovieList />
-    </>;
-    */
 
   return s.movies.length === 0 ? null : <>
-    <Routes>
-      <Route path="/movies" element={<MovieList />}></Route>
-      <Route path="/movie-detail/:slug" element={<MovieDetail />} />
-    </Routes>
+    <MovieList />
   </>;
 
 }

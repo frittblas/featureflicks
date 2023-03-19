@@ -27,15 +27,17 @@ body {
   object-fit: cover;
 }
 
-.welcome-msg {
-  background-color: #2062a3;
+.text-msg {
+  background-color: #24a320;
   border: 1px solid #ffffff;
   border-radius: 4px;
   padding: 20px;
   margin-top: 20px;
   text-align: center;
   font-size: 18px;
-  font-weight: bold;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .seats>.row>div {
@@ -79,3 +81,11 @@ body {
   justify-content: center;
   text-align: center;
 }
+
+/* Sticky footer 
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+*/
