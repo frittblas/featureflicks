@@ -6,7 +6,6 @@ import Welcome from './Welcome';
 import Footer from './Footer';
 import About from './About';
 import ShowSeats from './ShowSeats';
-import MovieList from './MovieList';
 import MovieDetail from './MovieDetail';
 import ShowScreenings from './ShowScreenings';
 import { Routes, Route, Link } from "react-router-dom";
@@ -34,7 +33,7 @@ export default function App() {
           <Route path="/movies" element={<ShowMovies />}> </Route>
           <Route path="/movie-detail/:slug" element={<MovieDetail />} />
           <Route path="/screenings" element={<ShowScreenings />}> </Route>
-          <Route path="/booking/:slug" element={<ShowSeats />} />
+          <Route path="/booking/:id" element={<ShowSeats />} />
           <Route path="/about" element={<About />}> </Route>
         </Routes>
       </div>

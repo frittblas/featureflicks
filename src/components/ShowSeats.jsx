@@ -1,5 +1,10 @@
 import DisplaySeats from './DisplaySeats';
+import { useParams } from 'react-router-dom';
 
 export default function ShowSeats() {
-  return <><DisplaySeats screeningId={4} /></>
+
+  // read the id param from the url
+  const { id } = useParams();
+
+  return <><DisplaySeats screeningId={id} /></>
 }

@@ -1,11 +1,11 @@
 import { useEffect } from 'react';
 import { useStates } from '../utilities/states';
 
-export default function DisplayChairs({ screeningId }) {
+export default function DisplaySeats({ screeningId }) {
 
   const s = useStates({
     screening: null,
-    moveie: null,
+    movie: null,
     seats: []
   });
 

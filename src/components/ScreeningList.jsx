@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 export default function ScreeningList() {
   const s = useStates('main');
   return <>
-    {s.screenings.map(({ slug, time, movieId, auditoriumId }) => <Link
-      to={'/booking/' + slug}>
+    {s.screenings.map(({ slug, id, time, movieId, auditoriumId }) => <Link
+      to={'/booking/' + id}>
       <div className="screening">
         <h3>{time}</h3>
         {/*<img src={'https://cinema-rest.nodehill.se' + d.posterImage} />*/}

@@ -3,7 +3,6 @@ import { useStates } from '../utilities/states';
 import { kebabify } from '../utilities/kebabify';
 import ScreeningList from './ScreeningList';
 
-
 export default function ShowScreenings() {
 
   const s = useStates('main', {
