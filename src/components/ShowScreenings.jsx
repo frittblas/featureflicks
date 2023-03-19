@@ -1,24 +1,21 @@
 import { useEffect } from 'react';
 import { useStates } from '../utilities/states';
-import { kebabify } from '../utilities/kebabify';
 import ScreeningList from './ScreeningList';
 
 export default function ShowScreenings() {
 
   const s = useStates('main', {
-    screenings: []
+    screenings: [],
+    movies: []
   });
 
   useEffect(() => {
     (async () => {
-      // fetch all screenings
+      // fetch all screenings and movies
       let screenings = await (await fetch('/api/screenings')).json();
-      // add a slug to be used in url routes to each movie
-      for (let screening of screenings) {
-        screening.slug = kebabify(screening.time);
-      }
-      // store the screenings in our state variable
       s.screenings = screenings;
+      let movies = await (await fetch('/api/movies')).json();
+      s.movies = movies;
     })();
   }, []);
 
