@@ -6,7 +6,8 @@ export default function ShowScreenings() {
 
   const s = useStates('main', {
     screenings: [],
-    movies: []
+    movies: [],
+    lol: 3
   });
 
   useEffect(() => {
