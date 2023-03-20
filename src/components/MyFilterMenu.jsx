@@ -11,6 +11,8 @@ export default function DropdownMenu() {
   /*
   
   For testing purposes! And learning about useState
+
+  THIS MENU IS LOCATED IN ShowScreenings.jsx instead.
   
   function ParentComponent() {
     const [count, setCount] = useState(0);

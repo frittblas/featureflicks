@@ -9,13 +9,6 @@ body {
   color: white;
 }
 
-Navbar {
-
-  position: sticky;
-  top: 0;
-
-}
-
 .aMovie {
   display: flex;
   flex-wrap: wrap;
