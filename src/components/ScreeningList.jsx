@@ -4,9 +4,10 @@ import { Link } from 'react-router-dom';
 export default function ScreeningList() {
   const s = useStates('main');
 
-  let currentCategory = "Horror";
+  let currentCategory = s.selectedItem;
 
   console.log(s.lol);
+  console.log(s.selectedItem);
 
   return <>
     {s.screenings.map(({ id, time, movieId, auditoriumId }) => <Link

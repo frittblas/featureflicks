@@ -1,8 +1,7 @@
 import React from 'react';
-import MyFilterMenu from './MyFilterMenu';
 
 export default function Welcome() {
-  return (<><MyFilterMenu />
+  return (<>
     <div className="text-msg">
       <h1>Welcome to the Movie Theater</h1>
       <p>Experience the magic of the movies in our state-of-the-art theaters. We have a wide selection of films to

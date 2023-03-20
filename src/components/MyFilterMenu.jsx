@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { useStates } from '../utilities/states';
 
 export default function DropdownMenu() {
   const [selectedItem, setSelectedItem] = useState('option1');
