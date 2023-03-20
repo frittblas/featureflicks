@@ -2,11 +2,11 @@ import { useStates } from '../utilities/states';
 import { Link } from 'react-router-dom';
 
 export default function ScreeningList() {
+
   const s = useStates('main');
 
   let currentCategory = s.selectedItem;
 
-  console.log(s.lol);
   console.log(s.selectedItem);
 
   return <>
@@ -14,7 +14,7 @@ export default function ScreeningList() {
       to={'/booking/' + id}>
       <div className="screening">
 
-        {s.movies[movieId - 1] && s.movies[movieId - 1].description.categories.includes(currentCategory) ? (
+        {s.movies[movieId - 1] && (s.movies[movieId - 1].description.categories.includes(currentCategory) || currentCategory === "All") ? (
           <>
             <h2>{new Intl.DateTimeFormat('en-US', {
               weekday: "long",

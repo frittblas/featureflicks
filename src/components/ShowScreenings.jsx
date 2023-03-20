@@ -7,7 +7,6 @@ export default function ShowScreenings() {
   const s = useStates('main', {
     screenings: [],
     movies: [],
-    lol: 3,
     selectedItem: "All"
   });
 
@@ -23,7 +22,7 @@ export default function ShowScreenings() {
 
   function handleDropdownChange(event) {
     s.selectedItem = event.target.value;
-    console.log(`Selected item: ${event.target.value}`);
+    //console.log(`Selected item: ${event.target.value}`);
   }
 
   return s.screenings.length === 0 ? null : <>
@@ -39,7 +38,6 @@ export default function ShowScreenings() {
         <option value="Documentary">Documentary</option>
         <option value="Biography">Biography</option>
         <option value="Music">Music</option>
-
       </select>
     </div>
     <ScreeningList />
