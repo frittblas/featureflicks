@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useStates } from '../utilities/states';
+import { generateBookingNumber } from '../utilities/generate-booking-number';
 import { Link } from 'react-router-dom';
 
 export default function DisplaySeats({ screeningId }) {
@@ -9,6 +10,8 @@ export default function DisplaySeats({ screeningId }) {
     movie: null,
     seats: []
   });
+
+  let numberOfBookedSeats = 0;
 
   useEffect(() => {
     (async () => {
@@ -86,6 +89,7 @@ export default function DisplaySeats({ screeningId }) {
         </div>)}
       </div><br /></>)}
     </div>
+    <Link to="#" onClick={() => alert("This feature not implemented yet! This is your booking number anyway: " + generateBookingNumber())}>Book these seats</Link>
     <Link to="/screenings">&larr; Go back</Link>
   </div>;
 }
