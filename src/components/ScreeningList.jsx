@@ -28,7 +28,6 @@ export default function ScreeningList() {
             <img src={`https://cinema-rest.nodehill.se${s.movies[movieId - 1].description.posterImage}`} />
             <p>{s.movies[movieId - 1].title}</p>
             <p>Length: {s.movies[movieId - 1].description.length} min.</p>
-            {/*<p>{s.movies[movieId - 1].description.categories.includes(currentCategory) ? "yes" : "no"}</p>*/}
             {auditoriumId === 1 ? <p>Lilla salen</p> : <p>Stora salen</p>}
             <hr />
           </>

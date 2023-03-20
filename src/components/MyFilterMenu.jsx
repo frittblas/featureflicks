@@ -8,6 +8,28 @@ export default function DropdownMenu() {
     //console.log(`Selected item: ${event.target.value}`);
   }
 
+  /*
+  
+  For testing purposes! And learning about useState
+  
+  function ParentComponent() {
+    const [count, setCount] = useState(0);
+  
+    return (
+      <div>
+        <ComponentA count={count} setCount={setCount} />
+        <ComponentB count={count} />
+      </div>
+    );
+  }
+  
+  function ComponentB(props) {
+    return <div>Count: {props.count}</div>;
+  }
+  
+  
+  */
+
   return (
     <div>
       <select value={selectedItem} onChange={handleDropdownChange}>

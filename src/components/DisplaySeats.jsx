@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useStates } from '../utilities/states';
+import { Link } from 'react-router-dom';
 
 export default function DisplaySeats({ screeningId }) {
 
@@ -85,5 +86,6 @@ export default function DisplaySeats({ screeningId }) {
         </div>)}
       </div><br /></>)}
     </div>
+    <Link to="/screenings">&larr; Go back</Link>
   </div>;
 }

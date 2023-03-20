@@ -11,22 +11,21 @@ import ShowScreenings from './ShowScreenings';
 import { Routes, Route, Link } from "react-router-dom";
 
 export default function App() {
-  return (<><header>
-    <Navbar bg="light" expand="lg" sticky="top">
-      <Container>
-        <Navbar.Brand as={Link} to="/">Feature flicks</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link as={Link} to="/movies">Movies</Nav.Link>
-            <Nav.Link as={Link} to="/screenings">Screenings</Nav.Link>
-            <Nav.Link as={Link} to="/about">About</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-  </header>
+  return (<>
     <main>
+      <Navbar bg="light" expand="lg" sticky="top">
+        <Container>
+          <Navbar.Brand as={Link} to="/">Feature flicks</Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link as={Link} to="/movies">Movies</Nav.Link>
+              <Nav.Link as={Link} to="/screenings">Screenings</Nav.Link>
+              <Nav.Link as={Link} to="/about">About</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
       <div>
         <Routes>
           <Route path="/" element={<Welcome />}> </Route>
