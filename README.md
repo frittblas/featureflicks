@@ -26,11 +26,11 @@ Regarding the components:
 There are 11 components that I put in the folder src/components.
 I tried to make each component just do one thing.
 
-+About:
- A simple component just returning a small "about"-section.
+1.  About:
+	A simple component just returning a small "about"-section.
 
-+App:
- The starting point. Here I set up the Navbar and all the routes.
+2.  App:
+	The starting point. Here I set up the Navbar and all the routes.
 
 +DisplaySeats:
  This component was taken from the lecture and slightly expanded to include
