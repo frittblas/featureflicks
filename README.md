@@ -14,6 +14,9 @@ npm run dev
 
 Started 2023-03-17
 
+
+##Some info:
+
 This app is responsive (using react-bootstrap).
 
 I used the utilities that were shown from the lectures:
@@ -21,7 +24,7 @@ I used the utilities that were shown from the lectures:
 
 I ended up using useStates instead of useState (although I learned how to use useState + props).
 
-Regarding the components:
+##Regarding the components:
 
 There are 11 components that I put in the folder src/components.
 I tried to make each component just do one thing.
