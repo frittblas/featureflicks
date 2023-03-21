@@ -26,10 +26,10 @@ Regarding the components:
 There are 11 components that I put in the folder src/components.
 I tried to make each component just do one thing.
 
-*About:
+* About:
 A simple component just returning a small "about"-section.
 
-*App:
+* App:
  he starting point. Here I set up the Navbar and all the routes.
 
 +DisplaySeats:
