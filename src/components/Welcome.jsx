@@ -5,9 +5,11 @@ export default function Welcome() {
     <div className="text-msg">
       <h1>Welcome to the Feature Flicks Movie Theater</h1>
       <p></p>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, doloremque corporis!
-        Animi voluptates accusantium, ea iure modi praesentium quas minus numquam voluptate inventore
-        eos at, distinctio illum explicabo perferendis natus?</p>
+      <p>This is my attempt at the cinema website assignment. Everything is implemented for at least Grade 3.
+        The seat-booking page is not completely done yet.
+        The design is responsive, using react-bootstrap.
+        Enjoy!
+      </p>
 
     </div></>
   );

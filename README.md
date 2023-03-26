@@ -58,12 +58,12 @@ A simple component just returning a small "about"-section.
  is clicked, you will go to the correct booking page (using route /booking/:id).
 
 * ShowMovies:
- Here the movies are fetched (with useEffect). Then this component shows <MovieList/> (above).
+ Here the movies are fetched (with useEffect). Then this component shows MovieList (above).
 
 * ShowScreenings:
  This component fetches all movies and screenings (and stores in shared state). It then sets up
  a dropdown menu (to select categories). The state-variables (s.movies[], s.screenings[] and s.selectedItem)
- are then picked up by the <ScreeningList/> component.
+ are then picked up by the ScreeningList component.
 
 * ShowSeats:
  This component uses useParams() to get the correct id to send to DisplaySeats.
